@@ -4,15 +4,16 @@
 EAPI=5
 inherit eutils
 EAP='-EAP'
-#PVERSION='1'
+PVERSION='1.1'
 HOMEPAGE="http://www.jetbrains.com/clion/"
 DESCRIPTION="JetBrains C(C++) IDE EAP, Non free used, use license"
-SRC_URI="http://download.jetbrains.com/cpp/clion-${PVERSION:-${PV}}.tar.gz"
 
 if [[ x${PVERSION} != 'x' ]]; then
+	SRC_URI="http://download.jetbrains.com/cpp/clion-${PVERSION}.tar.gz"
 	KEYWORDS="x86 amd64"
 else
 	KEYWORDS="~x86 ~amd64"
+	SRC_URI="http://download.jetbrains.com/cpp/clion-${PVERSION:-${PV}}.tar.gz"
 fi
 
 PROGNAME="Clion"
