@@ -4,7 +4,7 @@
 
 EAPI="5"
 inherit eutils
-PVERSION="4.0.4"
+PVERSION="5.0.1"
 #EAP=${PV}
 LICENSE="Apache-2.0"
 DESCRIPTION="PyCharm Community Edition RC. Preview Build 4 version. I't Free."
