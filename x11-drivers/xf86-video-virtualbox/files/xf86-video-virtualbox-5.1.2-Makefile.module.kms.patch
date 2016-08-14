@@ -1,0 +1,11 @@
+--- a/src/VBox/Additions/linux/drm/Makefile.module.kms	2016-07-21 19:23:32.000000000 +0300
++++ b/src/VBox/Additions/linux/drm/Makefile.module.kms	2016-08-14 11:37:28.674503262 +0300
+@@ -43,7 +43,7 @@
+  MANGLING := $(KBUILD_EXTMOD)/include/VBox/VBoxGuestMangling.h
+ endif
+ MOD_CFLAGS = -Wno-declaration-after-statement -fshort-wchar -include $(MANGLING) -fno-pie
+-MOD_INCL   = $(addprefix -I$(KBUILD_EXTMOD),/ /include)
++MOD_INCL   = $(addprefix -I$(KBUILD_EXTMOD),/ /include /r0drv/linux)
+ # What on earth is this?
+ MOD_INCL  += $(addprefix -I$(KBUILD_EXTMOD)/vboxvideo,/ /include)
+ MOD_INCL  += -Iinclude/drm
